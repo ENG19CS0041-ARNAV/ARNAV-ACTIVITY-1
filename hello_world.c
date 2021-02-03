@@ -1,10 +1,8 @@
 //Write the program to print "Hello World !"
 #include<stdio.h>
-#include<conio.h>
-void main()
+int main()
 {
   char c[20];
-  printf("enter your name\n");
-  scanf("%s",&c);
-  printf("%s is the name",c);
+  printf("MY NAME IS ARNAV GUPTA\n");
+  return 0;
 }
