@@ -1,19 +1,19 @@
 //WAP to find the sum of two fractions.
 #include<stdio.h>
-Struct fract
+struct fract
 {
      int nume;
      int deno;
 };
-typedef struct fract fraction
+typedef struct fract fraction;
 fraction input()
 {
      fraction a;
-     printf(“Enter the numerator\n”);
-     scanf(“%d”,&a.nume);
+     printf("Enter the numerator\n");
+     scanf("%d",&a.nume);
      
-     printf(“Enter the denominator\n”);
-     scanf(“%d”,&a.deno)
+     printf("Enter the denominator\n");
+     scanf("%d",&a.deno);
       
       return a;
 }
@@ -38,6 +38,6 @@ int main()
       a=input();
       b=input();
       c=sum(a,b);
-      printf(“ the sum is %d/%d”,c.nume,c.deno);
+      printf("the sum is %d/%d",c.nume,c.deno);
       return 0;
 }
