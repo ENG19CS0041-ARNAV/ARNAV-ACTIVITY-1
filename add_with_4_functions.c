@@ -1,32 +1,31 @@
-#include<stdio.h>
+ #include<stdio.h>
  #include<conio.h>
- int input1()
- {
- int no1;
- printf(“Enter first number\n”);
- scanf(“%d”,&no1);
- return no1; 
-} 
-int input2()
- { i
-nt no2; 
-printf(“Enter second number\n”);
- scanf(“%d”,&no2); return no2;
- } 
-int sum(a,b)
- { 
-int s=a+b; 
-return s;
-} 
-void print(se)
- { 
-printf(“Sum of %d and %d is: %d\n”,a,b,se); 
-} 
+{
+   int a;
+   printf(“enter a number”);
+   scanf(“%d”,a );
+   return a;
+}
+
+int find_sum(a,b)
+{
+   int sum;
+   sum=a+b;
+   return sum;
+}
+
+void output(a,b,c)
+{
+   printf(“sum of %d and %d is %d”,a,b,c);
+}
+
 int main()
- { 
-int a=input1(); 
-int b=input2();
- se=sum(a,b); 
-print(se); 
-return 0;
- }
+{
+   int x,y,z;
+   x=input();
+   y=input()
+   z=find_sum(x,y);
+   output(x,y,z);
+   return 0;
+}
+
