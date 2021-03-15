@@ -1,17 +1,17 @@
 //Write a program to compute sum of n fractions using structures and functions
 #include<stdio.h>
-Struct fract
+struct fract
 {
-     Int nume, deno;
+     int nume, deno;
 };
-Typedef struct fract fraction;
+typedef struct fract fraction;
 fraction input()
 {
      fraction a;
-     printf(“enter the numerator\n”);
-     scanf(“%d”,&a.nume);
-     printf(“enter the denominator\n”);
-     scanf(“%d”,&a.deno);
+     printf("enter the numerator\n");
+     scanf("%d",&a.nume);
+     printf("enter the denominator\n");
+     scanf("%d",&a.deno);
      return a;
 }
 fraction sum (fraction a,fraction b)
@@ -29,22 +29,23 @@ fraction sum (fraction a,fraction b)
         }
         return res;
 }
-Int main()
+int main()
 {
          int n;
-         printf(“enter the number of fractions”):
-       scanf(“%d”,&n);
-       fraction c,n;
+         printf("enter the number of fractions\n");
+         scanf("%d",&n);
+       fraction c,a[n];
        c.nume=0;
        c.deno=1;
       for(int i=0;i<n;i++)
 {
-       printf(“fraction %d”,(i+1));
-       a[i]=input;
+       printf("fraction %d",(i+1));
+       a[i]=input();
 }
 for (int i=0;i<n;i++)
 {
        c=sum(c,a[i]);
 }
-printf(“the final sum is %d/%d which is %.2f%”,c.nume,c.deno,(c.nume/(1.0*c.deno))*100);
+printf("the final sum is %d/%d which is %.2f%",c.nume,c.deno,(c.nume/(1.0*c.deno))*100);
+return 0;
 }
